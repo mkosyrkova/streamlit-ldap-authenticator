@@ -97,6 +97,12 @@ class Authenticate:
         if self.session_configs.user is None: return
         else: st.session_state[self.session_configs.user] = user
 
+    def setUserNone(self):
+        if self.session_configs.user is None:
+            return
+        else:
+            st.session_state[self.session_configs.user] = None
+
     def __setRememberMe(self, remember_me: bool):
         st.session_state[self.session_configs.remember_me] = remember_me
 
@@ -202,6 +208,9 @@ class Authenticate:
         if self.cookie_configs.name in cookies:
             self.cookie_manager.remove(self.cookie_configs.name)
             time.sleep(self.cookie_configs.delay_sec)
+
+    def deleteCookie(self):
+        self.__deleteCookie()
 
     def __getLoginConfig(self, config: Union[Object, LoginConfig, None] = None):
         config = config if type(config) is dict else \
