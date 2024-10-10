@@ -33,7 +33,7 @@ setup(
         "ldap3 >= 2.9.1",
         "pyjwt>=2.8.0",
         "streamlit-cookies-controller >= 0.0.3",
-        "streamlit-rsa-auth-ui >= 1.1.1"
+        "streamlit-rsa-auth-ui @ git+https://github.com/mkosyrkova/streamlit-rsa-auth-ui.git"
     ],
     extras_require={
         "devel": [
