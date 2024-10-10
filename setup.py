@@ -16,7 +16,7 @@ setup(
     description='Authenticate using ldap',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/NathanChen198/streamlit-ldap-authenticator',
+    url='https://github.com/mkosyrkova/streamlit-ldap-authenticator',
     packages=find_packages(),
     include_package_data=True,
     classifiers=[
