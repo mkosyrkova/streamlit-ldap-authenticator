@@ -343,6 +343,8 @@ class Authenticate:
             self.__setUser(user)
             return user
 
+        time.sleep(0.5)
+
         # ask user to log in
         user = self.__createLoginForm(additionalCheck, getLoginUserName, getInfo, config, callback)
         if type(user) is not dict: return None
