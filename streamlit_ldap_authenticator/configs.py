@@ -14,7 +14,7 @@ class LoginConfig(SigninFormConfig):
     busy_message: str
     error_icon: Optional[str]
     def __init__(self,
-            busy_message: str = 'Logging in...',
+            busy_message: str = 'Вход в систему...',
             error_icon: Optional[str] = None,
             formType: Optional[FormType] = None,
             labelSpan: Optional[int] = None,
