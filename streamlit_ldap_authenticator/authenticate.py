@@ -221,7 +221,7 @@ class Authenticate:
         
         busy_message = config.get("busy_message")
         config.pop('busy_message', "")
-        if type(busy_message) is not str: busy_message = "Logging in..."
+        if type(busy_message) is not str: busy_message = "Вход в систему..."
 
         error_icon = config.get("error_icon", None)
         config.pop('error_icon', "")
